@@ -1,0 +1,112 @@
+.app {
+  min-height: 100vh;
+  background-color:  #f4f7fb;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.app h1 {
+  color: #0f3d5e;
+  font-size: 42px;
+  margin-bottom: 12px
+}
+
+.app p {
+  color: #4f5d6b;
+  font-size: 18px;
+}
+
+.grade-profissional {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+.card-profissional {
+  background-color: white;
+  width: 280px;
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: 0 4px 18px rgb(15,61,94,0.12);
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.card-foto {
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 16px;
+}
+
+.card-profissional h2 {
+  color: #0f3d5e;
+  font-size: 22px;
+  margin: 0 0 8px;
+}
+
+.card-cargo {
+  color: #1f7a8c;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+
+.card-info {
+  color: #4f5d6b;
+  margin: 4px 0;
+}
+
+.card-habilidades {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-top: 18px;
+}
+
+.card-habilidades span {
+  background-color: #e8f3f7;
+  color: #0f3d5e;
+  padding: 6px 10px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.filtros {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 32px;
+}
+
+.filtros button {
+  background-color: white;
+  color: #0f3d5e;
+  border: 2px solid #0f3d5e;
+  border-radius: 20px;
+  padding: 10px 18px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.filtros button:hover {
+  background-color: #0f3d5e;
+  color: white;
+}
+
+.filtro-atual {
+  margin-top: 16px;
+  color: #4f5d6b;
+  font-weight: bold;
+}
+
+.filtros button.ativo {
+  background-color: #0f3d5e;
+  color: white;
+}
