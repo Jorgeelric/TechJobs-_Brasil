@@ -1,0 +1,78 @@
+TECHJOBS BRASIL - DOCUMENTAÇÃO DO PROJETO
+
+Ideia do site
+O TechJobs Brasil é um catálogo de profissionais de tecnologia.
+O usuário pode visualizar profissionais em cards, pesquisar por nome ou habilidade,
+filtrar por área, marcar favoritos e abrir uma pequena bio de cada pessoa.
+
+Objetivo do projeto
+O objetivo foi praticar os fundamentos de React criando uma aplicação pequena,
+organizada e interativa. O projeto foi evoluído passo a passo, saindo de uma
+página simples até uma interface com busca, filtros, favoritos, resumo e cards.
+
+Atividades executadas
+1. Criação do projeto com Vite e React.
+2. Limpeza da tela inicial do Vite.
+3. Criação de uma lista de profissionais em arquivo separado.
+4. Renderização da lista com map.
+5. Criação do componente CardProfissional.
+6. Estilização dos cards com CSS.
+7. Exibição das habilidades de cada profissional.
+8. Criação dos filtros por área.
+9. Uso de useState para guardar o filtro selecionado.
+10. Filtragem dos profissionais por área.
+11. Destaque visual do filtro ativo.
+12. Criação do campo de busca.
+13. Busca por nome e por habilidade.
+14. Mensagem para lista vazia.
+15. Contador de resultados.
+16. Botão para limpar filtros.
+17. Separação da interface em componentes menores.
+18. Criação do cabeçalho, resumo, lista de profissionais e rodapé.
+19. Ordenação alfabética dos profissionais.
+20. Criação do sistema de favoritos.
+21. Contagem de favoritos no resumo.
+22. Criação do filtro especial Favoritos.
+23. Ajustes de responsividade para telas menores.
+
+Principais conceitos praticados
+- Componentes React.
+- Props.
+- Estado com useState.
+- Eventos de clique e digitação.
+- Renderização de listas com map.
+- Filtros com filter.
+- Ordenação com sort e localeCompare.
+- Renderização condicional.
+- Separação de dados e interface.
+- CSS para layout, cards, botões e responsividade.
+
+Estrutura principal do projeto
+src/App.jsx
+Arquivo central. Guarda os estados principais, filtra os dados, calcula totais
+e chama os componentes da interface.
+
+src/data/profissionais.js
+Arquivo de dados. Guarda a lista de profissionais exibidos no site.
+
+src/components/Cabecalho.jsx
+Mostra o título e a frase inicial do site.
+
+src/components/Resumo.jsx
+Mostra os números principais: profissionais, áreas e favoritos.
+
+src/components/CampoBusca.jsx
+Mostra o campo de pesquisa.
+
+src/components/FiltroArea.jsx
+Mostra os botões de filtro.
+
+src/components/ListaProfissionais.jsx
+Renderiza a lista de cards ou uma mensagem vazia.
+
+src/components/CardProfissional.jsx
+Mostra cada profissional individualmente, com foto, cargo, habilidades, favorito
+e bio expansível.
+
+src/components/Rodape.jsx
+Mostra o rodapé do projeto.

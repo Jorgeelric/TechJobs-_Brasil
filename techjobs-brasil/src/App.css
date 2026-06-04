@@ -1,112 +1,481 @@
+/* Seleciona o container principal da aplicacao. */
 .app {
+  /* Faz a pagina ocupar no minimo a altura inteira da tela. */
   min-height: 100vh;
-  background-color:  #f4f7fb;
+  /* Define a cor de fundo geral da pagina. */
+  background-color: #f4f7fb;
+  /* Define a fonte principal da aplicacao. */
   font-family: Arial, sans-serif;
+  /* Centraliza textos dentro do container principal. */
   text-align: center;
+  /* Cria espacamento interno em cima/baixo e laterais. */
   padding: 40px 20px;
 }
 
+/* Estiliza o titulo principal dentro da aplicacao. */
 .app h1 {
+  /* Define a cor azul escura do titulo. */
   color: #0f3d5e;
+  /* Define o tamanho do titulo. */
   font-size: 42px;
-  margin-bottom: 12px
-}
-
-.app p {
-  color: #4f5d6b;
-  font-size: 18px;
-}
-
-.grade-profissional {
-  display: flex;
-  justify-content: center;
-  gap: 24px;
-  flex-wrap: wrap;
-  margin-top: 40px;
-}
-
-.card-profissional {
-  background-color: white;
-  width: 280px;
-  padding: 24px;
-  border-radius: 12px;
-  box-shadow: 0 4px 18px rgb(15,61,94,0.12);
-  text-align: center;
-  margin-bottom: 10px;
-}
-
-.card-foto {
-  width: 96px;
-  height: 96px;
-  border-radius: 50%;
-  object-fit: cover;
-  margin-bottom: 16px;
-}
-
-.card-profissional h2 {
-  color: #0f3d5e;
-  font-size: 22px;
-  margin: 0 0 8px;
-}
-
-.card-cargo {
-  color: #1f7a8c;
-  font-weight: bold;
+  /* Define o espaco abaixo do titulo. */
   margin-bottom: 12px;
 }
 
-.card-info {
+/* Estiliza paragrafos dentro da aplicacao. */
+.app p {
+  /* Define a cor cinza-azulada dos textos. */
   color: #4f5d6b;
+  /* Define o tamanho dos paragrafos. */
+  font-size: 18px;
+}
+
+/* Organiza os cards de profissionais. */
+.grade-profissionais {
+  /* Usa flexbox para alinhar os cards. */
+  display: flex;
+  /* Centraliza os cards horizontalmente. */
+  justify-content: center;
+  /* Define o espaco entre os cards. */
+  gap: 24px;
+  /* Permite quebrar linha quando nao couber. */
+  flex-wrap: wrap;
+  /* Cria espaco acima da grade. */
+  margin-top: 40px;
+}
+
+/* Estiliza cada card individual. */
+.card-profissional {
+  /* Define fundo branco para o card. */
+  background-color: white;
+  /* Define a largura base do card. */
+  width: 280px;
+  /* Cria espacamento interno. */
+  padding: 24px;
+  /* Arredonda os cantos do card. */
+  border-radius: 12px;
+  /* Cria sombra leve. */
+  box-shadow: 0 4px 18px rgb(15, 61, 94, 0.12);
+  /* Centraliza o texto do card. */
+  text-align: center;
+  /* Cria espaco abaixo do card. */
+  margin-bottom: 10px;
+  /* Usa flexbox para alinhar o conteudo em coluna. */
+  display: flex;
+  /* Organiza os itens verticalmente. */
+  flex-direction: column;
+  /* Centraliza os itens no eixo horizontal. */
+  align-items: center;
+  /* Define altura minima para alinhar os botoes. */
+  min-height: 330px;
+  /* Mantem uma borda invisivel para evitar deslocamento ao favoritar. */
+  border: 2px solid transparent;
+}
+
+/* Estiliza a foto do profissional. */
+.card-foto {
+  /* Define a largura da foto. */
+  width: 96px;
+  /* Define a altura da foto. */
+  height: 96px;
+  /* Deixa a foto redonda. */
+  border-radius: 50%;
+  /* Faz a imagem preencher o espaco sem distorcer. */
+  object-fit: cover;
+  /* Cria espaco abaixo da foto. */
+  margin-bottom: 16px;
+}
+
+/* Estiliza o nome dentro do card. */
+.card-profissional h2 {
+  /* Define a cor do nome. */
+  color: #0f3d5e;
+  /* Define o tamanho do nome. */
+  font-size: 22px;
+  /* Remove margens extras e cria espaco abaixo. */
+  margin: 0 0 8px;
+}
+
+/* Estiliza o cargo do profissional. */
+.card-cargo {
+  /* Define cor de destaque para o cargo. */
+  color: #1f7a8c;
+  /* Deixa o cargo em negrito. */
+  font-weight: bold;
+  /* Cria espaco abaixo do cargo. */
+  margin-bottom: 12px;
+}
+
+/* Estiliza informacoes como empresa e cidade. */
+.card-info {
+  /* Define a cor das informacoes secundarias. */
+  color: #4f5d6b;
+  /* Define margem vertical pequena. */
   margin: 4px 0;
 }
 
+/* Agrupa as habilidades do card. */
 .card-habilidades {
+  /* Usa flexbox para organizar as etiquetas. */
   display: flex;
+  /* Centraliza as etiquetas. */
   justify-content: center;
+  /* Define espaco entre etiquetas. */
   gap: 8px;
+  /* Permite quebrar linha se necessario. */
   flex-wrap: wrap;
+  /* Cria espaco acima das habilidades. */
   margin-top: 18px;
+  /* Cria espaco abaixo das habilidades. */
+  margin-bottom: 20px;
 }
 
+/* Estiliza cada etiqueta de habilidade. */
 .card-habilidades span {
+  /* Define o fundo da etiqueta. */
   background-color: #e8f3f7;
+  /* Define a cor do texto da etiqueta. */
   color: #0f3d5e;
+  /* Cria espacamento interno. */
   padding: 6px 10px;
+  /* Arredonda as etiquetas. */
   border-radius: 20px;
+  /* Define o tamanho do texto. */
   font-size: 13px;
+  /* Deixa o texto em negrito. */
   font-weight: bold;
 }
 
+/* Organiza os botoes de filtro. */
 .filtros {
+  /* Usa flexbox para alinhar os botoes. */
   display: flex;
+  /* Centraliza os botoes. */
   justify-content: center;
+  /* Define espaco entre botoes. */
   gap: 12px;
+  /* Permite quebrar linha em telas menores. */
   flex-wrap: wrap;
+  /* Cria espaco acima dos filtros. */
   margin-top: 32px;
 }
 
+/* Estiliza os botoes de filtro. */
 .filtros button {
+  /* Define fundo branco. */
   background-color: white;
+  /* Define cor do texto. */
   color: #0f3d5e;
+  /* Define borda azul. */
   border: 2px solid #0f3d5e;
+  /* Arredonda o botao. */
   border-radius: 20px;
+  /* Define espacamento interno. */
   padding: 10px 18px;
+  /* Deixa o texto em negrito. */
   font-weight: bold;
+  /* Mostra cursor de clique. */
   cursor: pointer;
 }
 
+/* Estiliza o filtro quando o mouse passa por cima. */
 .filtros button:hover {
+  /* Muda o fundo para azul. */
   background-color: #0f3d5e;
+  /* Muda o texto para branco. */
   color: white;
 }
 
+/* Estiliza o texto que mostra o filtro atual. */
 .filtro-atual {
+  /* Cria espaco acima. */
   margin-top: 16px;
+  /* Define cor do texto. */
   color: #4f5d6b;
+  /* Deixa em negrito. */
   font-weight: bold;
 }
 
+/* Estiliza o contador de resultados. */
+.contador-resultados {
+  /* Define cor de destaque. */
+  color: #0f3d5e;
+  /* Deixa em negrito. */
+  font-weight: bold;
+  /* Cria espaco acima. */
+  margin-top: 8px;
+}
+
+/* Estiliza o botao de filtro ativo. */
 .filtros button.ativo {
+  /* Deixa o fundo azul. */
   background-color: #0f3d5e;
+  /* Deixa o texto branco. */
   color: white;
 }
+
+/* Estiliza o campo de busca. */
+.campo-busca {
+  /* Faz o input ocupar a largura disponivel. */
+  width: 100%;
+  /* Limita a largura maxima do input. */
+  max-width: 420px;
+  /* Cria espaco acima. */
+  margin-top: 28px;
+  /* Define espacamento interno. */
+  padding: 14px 18px;
+  /* Define borda clara. */
+  border: 2px solid #d8e2ea;
+  /* Arredonda o input. */
+  border-radius: 24px;
+  /* Define tamanho do texto. */
+  font-size: 16px;
+  /* Remove contorno padrao ao focar. */
+  outline: none;
+}
+
+/* Estiliza o campo de busca quando esta focado. */
+.campo-busca:focus {
+  /* Muda a cor da borda no foco. */
+  border-color: #0f3d5e;
+}
+
+/* Estiliza a mensagem quando nao ha resultados. */
+.mensagem-vazia {
+  /* Faz a mensagem ocupar a linha inteira. */
+  width: 100%;
+  /* Define a cor do texto. */
+  color: #4f5d6b;
+  /* Define o tamanho do texto. */
+  font-size: 18px;
+  /* Deixa em negrito. */
+  font-weight: bold;
+  /* Cria espaco acima. */
+  margin-top: 20px;
+}
+
+/* Estiliza o botao de limpar filtros. */
+.botao-limpar {
+  /* Cria espaco acima. */
+  margin-top: 12px;
+  /* Remove fundo. */
+  background-color: transparent;
+  /* Define cor do texto. */
+  color: #0f3d5e;
+  /* Remove borda. */
+  border: none;
+  /* Deixa em negrito. */
+  font-weight: bold;
+  /* Mostra cursor de clique. */
+  cursor: pointer;
+  /* Sublinha para parecer acao secundaria. */
+  text-decoration: underline;
+}
+
+/* Estiliza o botao limpar no hover. */
+.botao-limpar:hover {
+  /* Muda a cor ao passar o mouse. */
+  color: #1f7a8c;
+}
+
+/* Estiliza o cabecalho. */
+.cabecalho {
+  /* Cria espaco abaixo do cabecalho. */
+  margin-bottom: 8px;
+}
+
+/* Estiliza o botao Ver perfil. */
+.botao-perfil {
+  /* Empurra o botao para a parte inferior do card. */
+  margin-top: auto;
+  /* Define fundo azul. */
+  background-color: #0f3d5e;
+  /* Define texto branco. */
+  color: white;
+  /* Remove borda. */
+  border: none;
+  /* Arredonda o botao. */
+  border-radius: 20px;
+  /* Define espacamento interno. */
+  padding: 10px 18px;
+  /* Deixa em negrito. */
+  font-weight: bold;
+  /* Mostra cursor de clique. */
+  cursor: pointer;
+  /* Remove margem inferior extra. */
+  margin-bottom: 0;
+}
+
+/* Estiliza o hover do botao Ver perfil. */
+.botao-perfil:hover {
+  /* Muda o fundo ao passar o mouse. */
+  background-color: #1f7a8c;
+}
+
+/* Estiliza a bio expandida do profissional. */
+.detalhe-perfil {
+  /* Cria espaco acima da bio. */
+  margin-top: 14px;
+  /* Define a cor do texto. */
+  color: #4f5d6b;
+  /* Define tamanho menor para texto detalhado. */
+  font-size: 14px;
+  /* Melhora a leitura de textos com mais de uma linha. */
+  line-height: 1.5;
+}
+
+/* Organiza os cards de resumo. */
+.resumo {
+  /* Usa flexbox para alinhar os blocos. */
+  display: flex;
+  /* Centraliza os blocos. */
+  justify-content: center;
+  /* Define espaco entre blocos. */
+  gap: 16px;
+  /* Permite quebrar linha. */
+  flex-wrap: wrap;
+  /* Cria espaco acima. */
+  margin-top: 24px;
+}
+
+/* Estiliza cada bloco do resumo. */
+.resumo div {
+  /* Define fundo branco. */
+  background-color: white;
+  /* Arredonda o bloco. */
+  border-radius: 12px;
+  /* Cria espacamento interno. */
+  padding: 16px 24px;
+  /* Define largura minima. */
+  min-width: 180px;
+  /* Cria sombra leve. */
+  box-shadow: 0 4px 18px rgb(15, 61, 94, 0.1);
+}
+
+/* Estiliza o numero principal do resumo. */
+.resumo strong {
+  /* Faz o numero ocupar uma linha propria. */
+  display: block;
+  /* Define cor do numero. */
+  color: #0f3d5e;
+  /* Define tamanho grande para o numero. */
+  font-size: 28px;
+  /* Cria espaco abaixo do numero. */
+  margin-bottom: 4px;
+}
+
+/* Estiliza a legenda do resumo. */
+.resumo span {
+  /* Define cor da legenda. */
+  color: #4f5d6b;
+  /* Deixa a legenda em negrito. */
+  font-weight: bold;
+}
+
+/* Estiliza o rodape. */
+.rodape {
+  /* Cria espaco acima do rodape. */
+  margin-top: 48px;
+  /* Cria espaco interno no topo. */
+  padding-top: 24px;
+  /* Cria uma linha separadora. */
+  border-top: 1px solid #d8e2ea;
+}
+
+/* Estiliza o texto do rodape. */
+.rodape p {
+  /* Define cor do texto. */
+  color: #4f5d6b;
+  /* Define tamanho menor. */
+  font-size: 14px;
+}
+
+/* Aplica ajustes somente em telas pequenas. */
+@media (max-width: 600px) {
+  /* Ajusta espacamento da pagina no celular. */
+  .app {
+    /* Reduz o padding lateral. */
+    padding: 28px 14px;
+  }
+
+  /* Reduz o titulo no celular. */
+  .app h1 {
+    /* Define tamanho menor. */
+    font-size: 32px;
+  }
+
+  /* Reduz a frase do cabecalho. */
+  .cabecalho p {
+    /* Define tamanho menor. */
+    font-size: 16px;
+  }
+
+  /* Ajusta os blocos do resumo. */
+  .resumo div {
+    /* Faz o bloco ocupar a largura disponivel. */
+    width: 100%;
+    /* Limita a largura maxima. */
+    max-width: 320px;
+  }
+
+  /* Ajusta o campo de busca. */
+  .campo-busca {
+    /* Garante que nao passe da largura da tela. */
+    max-width: 100%;
+    /* Inclui padding e borda dentro da largura. */
+    box-sizing: border-box;
+  }
+
+  /* Reduz espaco entre filtros. */
+  .filtros {
+    /* Define gap menor. */
+    gap: 8px;
+  }
+
+  /* Ajusta os botoes de filtro no celular. */
+  .filtros button {
+    /* Reduz padding. */
+    padding: 8px 12px;
+    /* Reduz tamanho do texto. */
+    font-size: 14px;
+  }
+
+  /* Ajusta os cards no celular. */
+  .card-profissional {
+    /* Faz o card ocupar a largura disponivel. */
+    width: 100%;
+    /* Limita a largura maxima. */
+    max-width: 320px;
+    /* Inclui borda e padding dentro da largura. */
+    box-sizing: border-box;
+  }
+}
+
+/* Estiliza o botao de favorito. */
+.botao-favorito {
+  /* Remove fundo. */
+  background-color: transparent;
+  /* Remove borda. */
+  border: none;
+  /* Define cor dourada. */
+  color: #f5a623;
+  /* Define tamanho da estrela. */
+  font-size: 28px;
+  /* Mostra cursor de clique. */
+  cursor: pointer;
+  /* Cria espaco abaixo da estrela. */
+  margin-bottom: 8px;
+}
+
+/* Estiliza hover do botao de favorito. */
+.botao-favorito:hover {
+  /* Aumenta levemente a estrela ao passar o mouse. */
+  transform: scale(1.1);
+}
+
+/* Estiliza o card quando esta favoritado. */
+.card-profissional.favoritado {
+  /* Cria borda dourada. */
+  border: 2px solid #f5a623;
+}
+

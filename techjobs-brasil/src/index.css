@@ -1,111 +1,200 @@
+/* Define variaveis globais e configuracoes base. */
 :root {
+  /* Cor padrao dos textos. */
   --text: #6b6375;
+  /* Cor dos titulos. */
   --text-h: #08060d;
+  /* Cor de fundo padrao. */
   --bg: #fff;
+  /* Cor padrao de borda. */
   --border: #e5e4e7;
+  /* Cor de fundo para trechos de codigo. */
   --code-bg: #f4f3ec;
+  /* Cor de destaque. */
   --accent: #aa3bff;
+  /* Fundo suave para elementos de destaque. */
   --accent-bg: rgba(170, 59, 255, 0.1);
+  /* Borda suave para destaque. */
   --accent-border: rgba(170, 59, 255, 0.5);
+  /* Fundo de botoes sociais, se existirem. */
   --social-bg: rgba(244, 243, 236, 0.5);
+  /* Sombra reutilizavel. */
   --shadow:
     rgba(0, 0, 0, 0.1) 0 10px 15px -3px, rgba(0, 0, 0, 0.05) 0 4px 6px -2px;
 
+  /* Fonte sem serifa usada no projeto. */
   --sans: system-ui, 'Segoe UI', Roboto, sans-serif;
+  /* Fonte usada em titulos. */
   --heading: system-ui, 'Segoe UI', Roboto, sans-serif;
+  /* Fonte usada em codigo. */
   --mono: ui-monospace, Consolas, monospace;
 
+  /* Define tamanho, altura de linha e fonte base. */
   font: 18px/145% var(--sans);
+  /* Define espacamento entre letras. */
   letter-spacing: 0.18px;
+  /* Permite tema claro e escuro. */
   color-scheme: light dark;
+  /* Define cor de texto padrao. */
   color: var(--text);
+  /* Define fundo padrao. */
   background: var(--bg);
+  /* Evita simulacao artificial de fonte. */
   font-synthesis: none;
+  /* Melhora renderizacao do texto. */
   text-rendering: optimizeLegibility;
+  /* Suaviza fonte em navegadores WebKit. */
   -webkit-font-smoothing: antialiased;
+  /* Suaviza fonte no Firefox para macOS. */
   -moz-osx-font-smoothing: grayscale;
+}
 
-  @media (max-width: 1024px) {
+/* Aplica ajustes quando a tela tem ate 1024px. */
+@media (max-width: 1024px) {
+  /* Seleciona as variaveis globais. */
+  :root {
+    /* Reduz tamanho base da fonte. */
     font-size: 16px;
   }
 }
 
+/* Aplica cores quando o sistema usa tema escuro. */
 @media (prefers-color-scheme: dark) {
+  /* Altera variaveis globais para tema escuro. */
   :root {
+    /* Cor de texto no tema escuro. */
     --text: #9ca3af;
+    /* Cor dos titulos no tema escuro. */
     --text-h: #f3f4f6;
+    /* Fundo no tema escuro. */
     --bg: #16171d;
+    /* Borda no tema escuro. */
     --border: #2e303a;
+    /* Fundo de codigo no tema escuro. */
     --code-bg: #1f2028;
+    /* Cor de destaque no tema escuro. */
     --accent: #c084fc;
+    /* Fundo de destaque no tema escuro. */
     --accent-bg: rgba(192, 132, 252, 0.15);
+    /* Borda de destaque no tema escuro. */
     --accent-border: rgba(192, 132, 252, 0.5);
+    /* Fundo social no tema escuro. */
     --social-bg: rgba(47, 48, 58, 0.5);
+    /* Sombra mais forte no tema escuro. */
     --shadow:
       rgba(0, 0, 0, 0.4) 0 10px 15px -3px, rgba(0, 0, 0, 0.25) 0 4px 6px -2px;
   }
-
-  #social .button-icon {
-    filter: invert(1) brightness(2);
-  }
 }
 
+/* Remove a margem padrao do navegador. */
 body {
+  /* Zera margem externa do body. */
   margin: 0;
 }
 
+/* Estiliza o elemento raiz onde o React e renderizado. */
 #root {
+  /* Define largura base da aplicacao. */
   width: 1126px;
+  /* Impede que ultrapasse a largura da tela. */
   max-width: 100%;
+  /* Centraliza a aplicacao. */
   margin: 0 auto;
+  /* Centraliza textos por padrao. */
   text-align: center;
+  /* Cria borda lateral. */
   border-inline: 1px solid var(--border);
+  /* Garante altura minima da tela. */
   min-height: 100svh;
+  /* Usa flexbox no container raiz. */
   display: flex;
+  /* Organiza filhos em coluna. */
   flex-direction: column;
+  /* Inclui borda dentro do tamanho total. */
   box-sizing: border-box;
 }
 
+/* Estiliza titulos h1 e h2. */
 h1,
 h2 {
+  /* Usa fonte de titulo. */
   font-family: var(--heading);
+  /* Define peso medio da fonte. */
   font-weight: 500;
+  /* Define cor dos titulos. */
   color: var(--text-h);
 }
 
+/* Estiliza h1 globalmente. */
 h1 {
+  /* Define tamanho grande. */
   font-size: 56px;
+  /* Define espacamento entre letras. */
   letter-spacing: -1.68px;
+  /* Define margens verticais. */
   margin: 32px 0;
-  @media (max-width: 1024px) {
+}
+
+/* Estiliza h1 em telas menores. */
+@media (max-width: 1024px) {
+  /* Seleciona h1. */
+  h1 {
+    /* Reduz tamanho do h1. */
     font-size: 36px;
+    /* Reduz margens. */
     margin: 20px 0;
   }
 }
+
+/* Estiliza h2 globalmente. */
 h2 {
+  /* Define tamanho do h2. */
   font-size: 24px;
+  /* Define altura de linha. */
   line-height: 118%;
+  /* Define espacamento entre letras. */
   letter-spacing: -0.24px;
+  /* Remove margens extras e cria espaco abaixo. */
   margin: 0 0 8px;
-  @media (max-width: 1024px) {
+}
+
+/* Estiliza h2 em telas menores. */
+@media (max-width: 1024px) {
+  /* Seleciona h2. */
+  h2 {
+    /* Reduz tamanho do h2. */
     font-size: 20px;
   }
 }
+
+/* Estiliza paragrafos globais. */
 p {
+  /* Remove margem padrao dos paragrafos. */
   margin: 0;
 }
 
+/* Estiliza elementos code e counter. */
 code,
 .counter {
+  /* Usa fonte monoespacada. */
   font-family: var(--mono);
+  /* Deixa o elemento em linha com comportamento flex. */
   display: inline-flex;
+  /* Arredonda as bordas. */
   border-radius: 4px;
+  /* Define cor do texto. */
   color: var(--text-h);
 }
 
+/* Estiliza especificamente elementos code. */
 code {
+  /* Define tamanho da fonte. */
   font-size: 15px;
+  /* Define altura de linha. */
   line-height: 135%;
+  /* Define espacamento interno. */
   padding: 4px 8px;
+  /* Define fundo do codigo. */
   background: var(--code-bg);
 }
+
