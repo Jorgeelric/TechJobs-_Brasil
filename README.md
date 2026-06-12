@@ -281,7 +281,7 @@ https://github.com/Jorgeelric
 
 LinkedIn:
 
-https://www.linkedin.com/in/jorgegaldino
+www.linkedin.com/in/jorge-galdino
 
 ---
 
