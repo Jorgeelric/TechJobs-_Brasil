@@ -8,12 +8,11 @@ Uma aplicação web desenvolvida com **React + Vite** para listar profissionais 
 
 ## Badges
 
-![Version](https://img.shields.io/badge/version-0.0.0-blue)
-![Status](https://img.shields.io/badge/status-em%20desenvolvimento-yellow)
-![Stars](https://img.shields.io/github/stars/Jorgeelric/TechJobs-_Brasil?style=social)
-![Forks](https://img.shields.io/github/forks/Jorgeelric/TechJobs-_Brasil?style=social)
-![Issues](https://img.shields.io/github/issues/Jorgeelric/TechJobs-_Brasil)
-![Last Commit](https://img.shields.io/github/last-commit/Jorgeelric/TechJobs-_Brasil)
+![Version](https://img.shields.io/badge/version-0.0.0-blue?style=for-the-badge)
+![Status](https://img.shields.io/badge/status-em%20desenvolvimento-yellow?style=for-the-badge)
+![React](https://img.shields.io/badge/React-19.2.6-61DAFB?style=for-the-badge&logo=react&logoColor=black)
+![Vite](https://img.shields.io/badge/Vite-8.0.12-646CFF?style=for-the-badge&logo=vite&logoColor=white)
+![Deploy](https://img.shields.io/badge/deploy-vercel-black?style=for-the-badge&logo=vercel)
 
 ---
 
