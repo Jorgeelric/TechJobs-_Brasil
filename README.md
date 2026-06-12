@@ -8,63 +8,110 @@ Uma aplicação web desenvolvida com **React + Vite** para listar profissionais 
 
 ## Badges
 
-
-
-
-
-
-\
-
----
-
-##  Demonstração
-
-> Área reservada para materiais visuais do projeto.
-
-* 📸 Screenshot da tela inicial
-* 🎞️ GIF demonstrando busca, filtros e favoritos
-* 🌐 Link do deploy: `em breve`
+![Version](https://img.shields.io/badge/version-0.0.0-blue)
+![Status](https://img.shields.io/badge/status-em%20desenvolvimento-yellow)
+![Stars](https://img.shields.io/github/stars/Jorgeelric/TechJobs-_Brasil?style=social)
+![Forks](https://img.shields.io/github/forks/Jorgeelric/TechJobs-_Brasil?style=social)
+![Issues](https://img.shields.io/github/issues/Jorgeelric/TechJobs-_Brasil)
+![Last Commit](https://img.shields.io/github/last-commit/Jorgeelric/TechJobs-_Brasil)
 
 ---
 
-## 📖 Sobre o Projeto
+## Demonstração
 
-O **TechJobs Brasil** é um catálogo de profissionais de tecnologia criado para praticar fundamentos essenciais do React, como componentes, props, estado, eventos, renderização de listas, filtros, ordenação e renderização condicional.
+### Deploy Online
 
-A aplicação permite visualizar profissionais cadastrados, pesquisar por nome ou habilidade, filtrar por área, marcar favoritos e abrir uma pequena bio individual.
+**Acesse o projeto:**
+
+https://tech-jobs-brasil-gy7g.vercel.app/
+
+
+### Screenshots
+
+<h4>Tela Inicial</h4>
+
+<p align="center">
+  <img src="./Tela%20Inicial.png" width="800" alt="Tela Inicial">
+</p>
+
+<h4>Busca de Profissionais</h4>
+
+<p align="center">
+  <img src="./Busca%20de%20Profissionais.png" width="800" alt="Busca de Profissionais">
+</p>
+
+<h4>Filtro por Área</h4>
+
+<p align="center">
+  <img src="./Filtro%20por%20Área.png" width="800" alt="Filtro por Área">
+</p>
+
+<h4>Favoritos</h4>
+
+<p align="center">
+  <img src="./Favoritos.png" width="800" alt="Favoritos">
+</p>
+
+<h4>Visualização de Perfil</h4>
+
+<p align="center">
+  <img src="./Ver%20perfil.png" width="800" alt="Ver perfil">
+</p>
+
+## Sobre o Projeto
+
+O TechJobs Brasil é um catálogo de profissionais de tecnologia criado para praticar os fundamentos do React através de uma aplicação organizada, componentizada e interativa.
+
+O sistema permite visualizar profissionais cadastrados, pesquisar por nome ou habilidade, aplicar filtros por área, marcar favoritos e visualizar uma breve descrição de cada profissional.
+
+O projeto foi desenvolvido com foco em:
+
+* Componentização
+* Gerenciamento de estado com React
+* Manipulação de listas
+* Filtros dinâmicos
+* Renderização condicional
+* Responsividade
+* Boas práticas de organização de código
 
 ---
 
-##  Principais Funcionalidades
+## Principais Funcionalidades
 
 * Listagem de profissionais em cards
-* Busca por nome ou habilidade
-* Filtro por área profissional
-* Filtro especial de favoritos
-* Sistema de favoritar/desfavoritar profissionais
-* Bio expansível em cada card
-* Contador de profissionais encontrados
-* Resumo com total de profissionais, áreas e favoritos
-* Botão para limpar filtros
-* Ordenação alfabética dos resultados
-* Layout responsivo para telas menores
+* Busca por nome
+* Busca por habilidades
+* Filtro por área
+* Filtro exclusivo de favoritos
+* Favoritar e remover favoritos
+* Contador de resultados
+* Resumo estatístico
+* Ordenação alfabética
+* Perfil expansível
+* Limpeza rápida dos filtros
+* Layout responsivo
 
 ---
 
-##  Tecnologias Utilizadas
+## Tecnologias Utilizadas
 
-| Tecnologia | Uso no projeto                      |
-| ---------- | ----------------------------------- |
-| React      | Construção da interface             |
-| Vite       | Ambiente de desenvolvimento e build |
-| JavaScript | Lógica da aplicação                 |
-| CSS        | Estilização e responsividade        |
-| HTML       | Estrutura base da interface         |
-| ESLint     | Padronização e análise do código    |
+| Tecnologia | Finalidade                  |
+| ---------- | --------------------------- |
+| React      | Construção da interface     |
+| Vite       | Ambiente de desenvolvimento |
+| JavaScript | Lógica da aplicação         |
+| CSS3       | Estilização                 |
+| HTML5      | Estrutura da aplicação      |
+| ESLint     | Padronização do código      |
+| Git        | Controle de versão          |
+| GitHub     | Hospedagem do código        |
+| Vercel     | Deploy da aplicação         |
 
 ---
 
-##  Arquitetura do Projeto
+## Arquitetura do Projeto
+
+### Estrutura de Pastas
 
 ```bash
 TechJobs-_Brasil/
@@ -72,40 +119,63 @@ TechJobs-_Brasil/
 └── techjobs-brasil/
     ├── package.json
     ├── src/
-    │   ├── App.jsx
-    │   ├── App.css
-    │   ├── data/
-    │   │   └── profissionais.js
-    │   └── components/
-    │       ├── Cabecalho.jsx
-    │       ├── Resumo.jsx
-    │       ├── CampoBusca.jsx
-    │       ├── FiltroArea.jsx
-    │       ├── ListaProfissionais.jsx
-    │       ├── CardProfissional.jsx
-    │       └── Rodape.jsx
+    │
+    ├── App.jsx
+    ├── App.css
+    │
+    ├── data/
+    │   └── profissionais.js
+    │
+    └── components/
+        ├── Cabecalho.jsx
+        ├── Resumo.jsx
+        ├── CampoBusca.jsx
+        ├── FiltroArea.jsx
+        ├── ListaProfissionais.jsx
+        ├── CardProfissional.jsx
+        └── Rodape.jsx
 ```
 
-### Fluxo da aplicação
+### Fluxo da Aplicação
 
-O arquivo `App.jsx` centraliza os estados principais da aplicação:
+```text
+Dados dos Profissionais
+          ↓
+       App.jsx
+          ↓
+ Estados e Filtros
+          ↓
+ Componentes
+          ↓
+ Interface do Usuário
+```
 
-* área selecionada;
-* texto digitado na busca;
-* lista de favoritos.
+### Organização do Código
 
-A partir desses estados, a aplicação filtra, ordena e renderiza os profissionais por meio de componentes menores e reutilizáveis.
+#### App.jsx
 
-### Organização do código
+Responsável por:
 
-* `data/profissionais.js`: armazena os dados dos profissionais.
-* `components/`: contém os blocos visuais da interface.
-* `App.jsx`: controla a lógica principal.
-* `App.css`: concentra os estilos, layout dos cards, filtros, resumo e responsividade.
+* Gerenciamento dos estados
+* Busca
+* Filtros
+* Favoritos
+* Ordenação
+* Integração entre componentes
+
+#### data/profissionais.js
+
+Responsável por:
+
+* Armazenar os dados dos profissionais
+
+#### components/
+
+Responsável pela separação da interface em componentes reutilizáveis.
 
 ---
 
-##  Instalação
+## Instalação
 
 Clone o repositório:
 
@@ -113,7 +183,7 @@ Clone o repositório:
 git clone https://github.com/Jorgeelric/TechJobs-_Brasil.git
 ```
 
-Acesse a pasta do projeto:
+Entre na pasta do projeto:
 
 ```bash
 cd TechJobs-_Brasil/techjobs-brasil
@@ -127,27 +197,27 @@ npm install
 
 ---
 
-##  Como Executar
+## Como Executar
 
-Para rodar o projeto em ambiente de desenvolvimento:
+### Ambiente de Desenvolvimento
 
 ```bash
 npm run dev
 ```
 
-Para gerar a versão de produção:
+### Build de Produção
 
 ```bash
 npm run build
 ```
 
-Para visualizar o build localmente:
+### Visualizar Build
 
 ```bash
 npm run preview
 ```
 
-Para executar o lint:
+### Executar Lint
 
 ```bash
 npm run lint
@@ -155,60 +225,81 @@ npm run lint
 
 ---
 
-##  Roadmap
+## Roadmap
 
-* [ ] Adicionar deploy online
-* [ ] Criar README com screenshots reais
-* [ ] Adicionar persistência dos favoritos no `localStorage`
-* [ ] Criar página individual de perfil
-* [ ] Adicionar filtro por cidade
-* [ ] Adicionar filtro por empresa
-* [ ] Melhorar acessibilidade dos componentes
-* [ ] Criar testes automatizados
-* [ ] Adicionar licença ao repositório
-* [ ] Criar arquivo `.env.example`, caso futuramente utilize APIs externas
+### Próximas Melhorias
+
+* [ ] Persistência de favoritos com Local Storage
+* [ ] Integração com API real
+* [ ] Página individual do profissional
+* [ ] Sistema de paginação
+* [ ] Dark Mode
+* [ ] Busca avançada
+* [ ] Filtro por cidade
+* [ ] Filtro por empresa
+* [ ] Testes automatizados
+* [ ] Migração para TypeScript
+* [ ] Deploy automatizado com GitHub Actions
 
 ---
 
-##  Contribuição
+## Contribuição
 
-Contribuições são bem-vindas.
+Contribuições são sempre bem-vindas.
 
-Para contribuir:
+### Passos para contribuir
 
 ```bash
-# Faça um fork do projeto
+# Faça um Fork
 
 # Crie uma branch
-git checkout -b feature/minha-melhoria
+git checkout -b feature/minha-feature
 
-# Faça o commit
-git commit -m "feat: adiciona minha melhoria"
+# Faça suas alterações
 
-# Envie para o GitHub
-git push origin feature/minha-melhoria
+# Commit
+git commit -m "feat: adiciona nova funcionalidade"
+
+# Push
+git push origin feature/minha-feature
 ```
 
-Depois, abra um Pull Request descrevendo claramente o que foi alterado.
+Depois disso, abra um Pull Request.
 
 ---
 
 ## Autor
 
-Desenvolvido por **Jorge Galdino**.
+**Jorge Gàlddino**
 
-* GitHub: [@Jorgeelric](https://github.com/Jorgeelric)
+Profissional de Tecnologia com experiência em Tecnologia Forense, e-Discovery, Auditoria de TI e em transição para o desenvolvimento Front-End.
+
+### Contato
+
+GitHub:
+
+https://github.com/Jorgeelric
+
+LinkedIn:
+
+https://www.linkedin.com/in/jorgegaldino
 
 ---
 
-##  Licença
+## Licença
 
 Este projeto ainda não possui uma licença definida.
 
-Recomenda-se adicionar uma licença open source, como **MIT**, caso o objetivo seja permitir uso, estudo, modificação e distribuição do código.
+Caso deseje disponibilizar o código para uso da comunidade, recomenda-se a utilização da licença MIT.
 
 ---
 
-##  Apoie o Projeto
+## Apoie o Projeto
 
-Se este projeto te ajudou ou chamou sua atenção, considere deixar uma estrela no repositório.
+Se este projeto foi útil para você:
+
+* Deixe uma estrela no repositório
+* Compartilhe com outros desenvolvedores
+* Contribua com melhorias
+
+Seu apoio ajuda na evolução contínua do projeto.
