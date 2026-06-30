@@ -271,7 +271,7 @@ Depois disso, abra um Pull Request.
 
 **Jorge Gàlddino**
 
-Profissional de Tecnologia com experiência em Tecnologia Forense, e-Discovery, Auditoria de TI e em transição para o desenvolvimento Front-End.
+Estudante e praticante de  desenvolvimento Front-End.
 
 ### Contato
 
